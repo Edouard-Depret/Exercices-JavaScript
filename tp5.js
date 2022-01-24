@@ -8,7 +8,7 @@ while ((email != userEmail || password != userPassword) && i < 4) {
   alert("LOGIN INCORRECTS");
   userEmail = prompt("Veuillez rentrer votre email");
   userPassword = prompt("Veuillez rentrer votre mot de passe");
-  console.log(i);
+  console.log("nombre d'essai: ", i + 1);
   i++;
 }
 
@@ -16,7 +16,10 @@ if (i == 4) {
   console.log(
     "Vous avez rentré 5 fois les mauvais mots de passe, vous êtes maintenant bloqué."
   );
+  alert(
+    "Vous avez rentré 5 fois les mauvais mots de passe, vous êtes maintenant bloqué."
+  );
 }
-if (email == userEmail && password == userPassword) {
+if (email === userEmail && password === userPassword) {
   console.log("Bienvenu dans votre espace client.");
 }

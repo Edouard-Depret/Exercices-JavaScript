@@ -6,3 +6,4 @@ while (number > 3 || number < 0) {
 }
 
 console.log("Bonne réponse!");
+alert("Bonne réponse!");

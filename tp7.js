@@ -11,3 +11,4 @@ while (number > 20 || number < 10) {
 }
 
 console.log("Bonne réponse!");
+alert("Bonne réponse!");
