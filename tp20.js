@@ -1,18 +1,14 @@
 function retourner(tableau, direction, nombre) {
-  let transitionUne = "";
   if (direction === "droite") {
     for (let i = 0; i <= nombre - 1; i++) {
-      transitionUne = tableau.pop();
-      tableau.unshift(transitionUne);
+      tableau.unshift(tableau.pop());
     }
-    return tableau;
-  } else if (direction === "gauche") {
+  } else {
     for (let i = 0; i <= nombre - 1; i++) {
-      transitionUne = tableau.shift();
-      tableau.push(transitionUne);
+      tableau.push(tableau.shift());
     }
-    return tableau;
   }
+  return tableau;
 }
 
 console.log(retourner([1, 2, 3, 4], "droite", 2));
